@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".Validation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/services"
+        android:background="@color/white"
+        android:text="@string/authencation"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:textColor="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:checkedButton="@id/rationcardRadiobutton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rationcardRadiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/white"
+                android:fontFamily="serif"
+                android:checked="true"
+                android:text="@string/rc_no"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!--adding a radio button -->
+            <RadioButton
+                android:id="@+id/aadhaarcardradiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/white"
+                android:fontFamily="serif"
+                android:text="@string/aadhaar"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:id="@+id/cardNumberEnter"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittextshape"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Card Number"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"
+        android:maxLength="12"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:inputType="number"
+        android:textSize="24sp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:weightSum="2">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/back"
+        android:layout_weight="1"
+        android:text="@string/back"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/backbutton"
+        android:textStyle="bold"/>
+
+     <androidx.appcompat.widget.AppCompatButton
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/authenticate"
+         android:layout_weight="1"
+         android:text="Next"
+         android:fontFamily="serif"
+         android:background="@drawable/nextbutton"
+         android:textSize="24sp"
+         android:layout_marginStart="5dp"
+         android:layout_marginEnd="5dp"
+         android:textColor="@color/white"
+         android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

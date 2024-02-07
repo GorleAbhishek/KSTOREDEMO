@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".Services">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/services"
+        android:background="#FFFFFF"
+        android:text="@string/services"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:textColor="@color/blue"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sabari"
+        android:id="@+id/ItemButton"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittextshape"
+        android:textColor="@color/blue"
+        android:layout_marginStart="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginEnd="10dp"/>
+
+</LinearLayout>

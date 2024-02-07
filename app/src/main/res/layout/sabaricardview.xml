@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textviewshape">
+
+        <TextView
+            android:id="@+id/sabariItemName"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/sabariQtyEnter"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/textviewshape"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/sabariPriceEnter"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:maxLength="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/textviewshape"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sabariTotalPrice"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
